@@ -41,7 +41,7 @@ relax_expert <- fuzzy_system(variables, reglas)
 
 # Mostramos las variables y las reglas del sistema
 print(relax_expert)
-
+sdfsdfsdf
 # Mostramos el gr�fico (trama) del sistema
 plot(relax_expert)
 
