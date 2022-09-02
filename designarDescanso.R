@@ -42,18 +42,19 @@ relax_expert <- fuzzy_system(variables, reglas)
 # Mostramos las variables y las reglas del sistema
 print(relax_expert)
 
-# Mostramos el gráfico (trama) del sistema
+# Mostramos el grï¿½fico (trama) del sistema
 plot(relax_expert)
 
-
+###########################################################################################
+###########################################################################
 
 
 
 ejemplo.1 <- fuzzy_inference(relax_expert, list(horas_trabajo = 240, horas_estudio = 300,
                                           horas_deporte = 60))
-# Ahora, defuizamos el ejemplo para transformar los parámetros en un número real
+# Ahora, defuizamos el ejemplo para transformar los parï¿½metros en un nï¿½mero real
 gset_defuzzify(ejemplo.1, "centroid")
-# Mostramos el gráfico
+# Mostramos el grï¿½fico
 plot(ejemplo.1)
 
 ejemplo.2 <- fuzzy_inference(relax_expert, list(horas_trabajo = 490, horas_estudio = 0,
